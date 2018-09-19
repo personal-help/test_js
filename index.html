@@ -2,70 +2,98 @@
 <html>
  <head>
   <meta charset="utf-8">
-   <title>Site</title>
+   <title>DropShoping</title>
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="description" content="">
      <meta name="author" content="">
      
-     <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="img/title_icon.png">
+     <link rel="stylesheet" href="style/style.css">
      <link rel="icon" href="img/">
         <script src="js/jQuery/Library.js"></script>
-        <script type="text/javascript" src="js/function_js.js"></script>
- </head>
-    
-<body>
- 
- <div class="container">   
-  <header>
-      <div class="row cols col-12">
-        <div class="cols col-4" id="hdOne" onclick="userName(), $('#button1').hide()"><p id="button1">ВНЕСТИ ИМЯ</p></div>
-        <div class="cols col-4" id="hdTwo">SITE</div>
-        <div class="cols col-4" id="hdThr"></div> 
-
-      </div>
-      <div class="row cols col-12"> <h1>ИСАПЫТАТЕЛЬНЫЙ ПОЛИГОН JAVASCRIPT!!!</h1></div>
-  </header>
-  
-  <main>
-    <div class="cols col-2">
-    
-        <form id="form1" name="form1">
-            <ul id="headMenu" style="display:none">
-                <li id="menu" class="part1">Смена цвета фона</li>     
-                <li id="menu" class="part2"  onclick="$('.part2').hide()">ТВОЁ БУДУЩЕЕ!</li>
-                <li id="menu" class="part3" style="cursor:pointer">Загрузить php данные</li>
-                <li id="menu" class="part4">Пункт 4</li>
-                <li id="menu" class="part5">Пункт 5</li>
-                <li id="menu">Пункт 6</li>
-                <li id="menu">Пункт 7</li>
-                <li id="menu">Пункт 8</li>
-                <li id="menu">Пункт 9</li>
-                <li id="menu">Пункт 10</li>
-            </ul>
-        </form>
-        <p id="show">Показать меню</p>
-        <p id="hide" style="display:none">Скрыть меню</p>
-    </div>
-      
-   <div class="cols col-8"><br>
        
-       <div id="loading">
+        <script type="text/javascript" src="js/function.js"></script>
+        <script src="js/plugin.js"></script>
+ </head>
+ 
+<body>
+  
+  <div id="predloader">
+   <div class="loader">
+       <div id="logoName">
+               <h1>DropShoping</h1>
+           </div>
+   </div>
+  </div>    
+    
+     <div class="container"> 
+       
+       <div class="cols col-header">
+           
+           <div id="topMenu_1" class="cols col-2head">Главная</div>
+           <div id="topMenu_2" class="cols col-2head">Категории</div>
+           <div id="topMenu_3" class="cols col-2head">Обратная связь</div>
+           <div id="topMenu_4" class="cols col-2head">О нас</div>
+           <div id="topMenu_5" class="cols col-2head">Спонсоры</div>
+           <div id="topMenu_6" class="cols col-2head">EN/RU/KZ</div>
            
        </div>
-   </div>
-      
-   <div class="cols col-2">
-       <div id="test" ></div><br>
-   </div>
-  </main>
+       
+       <div class="headerMenu_1">
+           
+           <h1>ГЛАВНАЯ</h1>
+           
+       </div>
+       
+       
+       <div class="headerMenu_2" style="display: none"> 
+           
+           <div class="cols col-9">    
         
-  <footer>
-      <div class="row cols col-12">
-          <h1>SYSTEM NOT FOUND!</h1>
-      </div>
-  </footer>
-            
- </div>
-</body>    
+            <div id="menu_1" class="cols col-2">Мужское </div>
+            <div id="menu_2" class="cols col-2">Женское </div>
+            <div id="menu_3" class="cols col-2">Для мальчиков</div>
+            <div id="menu_4" class="cols col-2">Для девочек</div>
+            <div id="menu_5" class="cols col-2">Дополнительно</div>
+            <div id="menu_6" class="cols col-2">Разное</div> 
+        
+            <div class="cols col-12">
+                
+                <div id="menu_1Content"                      ><h1>One content information</h1>
+                  
+                </div>
+                <div id="menu_2Content" style="display: none"><h1>Two content information</h1>
+                    
+                </div>
+                <div id="menu_3Content" style="display: none"><h1>Three content information</h1>
+             
+                </div>
+                <div id="menu_4Content" style="display: none"><h1>Four content information</h1>
+                    
+                </div>
+                <div id="menu_5Content" style="display: none"><h1>Five content information</h1>
+                    
+                </div>
+                <div id="menu_6Content" style="display: none"><h1>Six content information</h1>
+                
+                </div>
+                
+            </div>
+        
+        </div>
+           
+       </div>
+       
+       
+         <div class="headerMenu_3" style="display: none"> <h1>ОБРАТНАЯ СВЯЗЬ</h1> </div>
+       <div class="headerMenu_4" style="display: none"> О НАС </div>
+       <div class="headerMenu_5" style="display: none"> СПОНСОРЫ </div>
+        
+        <div class="cols col-footer">
+            Copyright 2018
+        </div>
+        
+    </div>
+</body>
 </html>
