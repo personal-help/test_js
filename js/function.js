@@ -4,7 +4,7 @@ $(window).on('load',function(){
 });
 
 $(document).ready(function(){   
-     $(".loader").circularProgress({
+    $(".loader").circularProgress({
         color: "#25ffe4",
         line_width: 12,
         height: "350px",
@@ -12,46 +12,27 @@ $(document).ready(function(){
         percent: 0,
     }).circularProgress('animate', 100, 1500);
     
+    topMenu("#topMenu_1",".headerMenu_1",1);
+    topMenu("#topMenu_2",".headerMenu_2",2);
+    topMenu("#topMenu_3",".headerMenu_3",3);
+    topMenu("#topMenu_4",".headerMenu_4",4);
+    topMenu("#topMenu_5",".headerMenu_5",5);
+    topMenu("#topMenu_6",".headerMenu_6",6);   
     
-    $("#topMenu_1").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=1){
-        if($(".headerMenu_"+i)!=""){ $(".headerMenu_"+i).slideUp('slow');} $(".headerMenu_1").slideDown('slow');}}});
-    
-    $("#topMenu_2").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=2){
-        if($(".headerMenu_"+i)!=""){ $(".headerMenu_"+i).slideUp('slow');} $(".headerMenu_2").slideDown('slow');}}});
-    
-    $("#topMenu_3").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=3){
-        if($(".headerMenu_"+i)!=""){ $(".headerMenu_"+i).slideUp('slow');} $(".headerMenu_3").slideDown('slow');}}});
-    
-    $("#topMenu_4").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=4){
-        if($(".headerMenu_"+i)!=""){ $(".headerMenu_"+i).slideUp('slow');} $(".headerMenu_4").slideDown('slow');}}});
-    
-    $("#topMenu_5").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=5){
-        if($(".headerMenu_"+i)!=""){ $(".headerMenu_"+i).slideUp('slow');} $(".headerMenu_5").slideDown('slow');}}});
-    
-    $("#topMenu_6").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=6){
-        if($(".headerMenu_"+i)!=""){ $(".headerMenu_"+i).slideUp('slow');} $(".headerMenu_6").slideDown('slow');}}});
-    
-    
-    
-    
-    
-    $("#menu_1").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=1){
-        if($("#menu_"+i+"Content")!=""){ $("#menu_"+i+"Content").slideUp('slow');} $("#menu_1Content").slideDown('slow');}}});
-    
-    $("#menu_2").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=2){
-        if($("#menu_"+i+"Content")!=""){ $("#menu_"+i+"Content").slideUp('slow');} $("#menu_2Content").slideDown('slow');}}});
-    
-    $("#menu_3").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=3){
-        if($("#menu_"+i+"Content")!=""){ $("#menu_"+i+"Content").slideUp('slow');} $("#menu_3Content").slideDown('slow');}}});
-    
-    $("#menu_4").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=4){
-        if($("#menu_"+i+"Content")!=""){ $("#menu_"+i+"Content").slideUp('slow');} $("#menu_4Content").slideDown('slow');}}});
-    
-    $("#menu_5").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=5){
-        if($("#menu_"+i+"Content")!=""){ $("#menu_"+i+"Content").slideUp('slow');} $("#menu_5Content").slideDown('slow');}}});
-    
-    $("#menu_6").bind("click",function(){ for(var i=1;i<=6;i++){if(i!=6){
-        if($("#menu_"+i+"Content")!=""){ $("#menu_"+i+"Content").slideUp('slow');} $("#menu_6Content").slideDown('slow');}}});
-    
+    menu("#menu_1","#menu_1Content",1);
+    menu("#menu_2","#menu_2Content",2);
+    menu("#menu_3","#menu_3Content",3);
+    menu("#menu_4","#menu_4Content",4);
+    menu("#menu_5","#menu_5Content",5);
+    menu("#menu_6","#menu_6Content",6);
 });
 
+    function topMenu(thisName,forName,num){
+        $(thisName).bind("click",function(){ for(var i=1;i<=6;i++){if(i!=num){
+        if($(".headerMenu_"+i)!=""){ $(".headerMenu_"+i).slideUp('slow');} $(forName).slideDown('slow');}}});
+    }
+
+    function menu(thisName,forName,num){
+        $(thisName).bind("click",function(){ for(var i=1;i<=6;i++){if(i!=num){
+        if($("#menu_"+i+"Content")!=""){ $("#menu_"+i+"Content").slideUp('slow');} $(forName).slideDown('slow');}}});
+    }

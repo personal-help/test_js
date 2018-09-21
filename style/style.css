@@ -52,7 +52,7 @@ body{
 }
 
 .container{
-    background: #cccccc;
+    background: none;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -151,6 +151,6 @@ body{
     padding-top: 100px;
     height: 670px;
     text-align: center;
-    background: url("https://www.desktopbackground.org/t/2015/08/16/996214_fashion-tumblr-backgrounds-with-tumblr-wallpa-32804_2560x1440_h.png");;
+    background: none;
 }
 
